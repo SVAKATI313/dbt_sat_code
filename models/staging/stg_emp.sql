@@ -1,4 +1,4 @@
-{{config(materialized='view')}}
+{{config(materialized='table',transient=false)}}
 
 WITH tb1 as (
     select EMPID as ID, 
